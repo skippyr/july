@@ -1,67 +1,66 @@
 # July
 
-## Starting Point
+## Description
 
-The July project is a minimalist theme for the ZSH shell inspired by the default
-theme for Bash in Ubuntu and Arch Linux.
+A simple theme for the ZSH shell.
 
-This theme can be setup with a series of terminal emulators, themes and
-wallpapers. You can use following preview as a source of inspiration and
-reference to see what it can look like:
+![](images/preview.png)
 
-![](./images/preview.png)
+> **Note**
+>
+> The theme may look different in your setup as its appearance depends of what
+> colors and font you are using for your terminal emulator. Use the preview as
+> just a reference.
+>
+> Theme used for terminal emulator is [Flamerial](https://github.com/skippyr/flamerial).
 
-> In this preview, the July theme was used within the [Kitty terminal emulator](https://github.com/kovidgoyal/kitty)
-with the [Flamerial theme](https://github.com/skippyr/flamerial). Font used is
-FantasqueSansM Nerd Font. Wallpaper is [Waterfalls during daytime by Ingi Haraldss](https://unsplash.com/photos/XnkK88K2bao) from Unsplash.
-
-## Features
-
-This theme can show you the following information:
-
-* Your user and hostname.
-* Your current directory path.
+Here the description of its design:
+-	Shows your name and host names.
+-	Shows your current directory path.
 
 ## Installation
 
-You can install this theme in multiple ways, use the one that suits you best.
+### Manual Procedures
 
-### Manually
+Use the following instructions to install this theme manually.
 
-* Run the following command to install the theme at
-  `~/.local/share/zsh/themes/july`.
+-	Run the following command inside of a terminal emulator to install the theme.
+```bash
+git clone --depth=1 https://github.com/skippyr/july\
+                    ~/.local/share/zsh/themes/july &&
+echo "source ~/.local/share/zsh/themes/july/july.zsh-theme" >> ~/.zshrc
+```
 
-    ```bash
-    git clone --depth=1 https://github.com/skippyr/july ~/.local/share/zsh/themes/july &&
-    echo "source \"${HOME}/.local/share/zsh/themes/july/july.zsh-theme\"" >> ~/.zshrc
-    ```
+-	Reopen the terminal emulator to load the theme.
 
-* Reopen your terminal emulator.
+### Procedures With OhMyZSH
 
-### Within OhMyZSH
+Use the following instructions to install this theme for OhMyZSH.
 
-* Install the theme in OhMyZSH custom themes' directory.
+-	Run the following command inside of a terminal emulator to install the theme.
 
-    ```bash
-    git clone --depth=1 https://github.com/skippyr/july ${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/themes/july
-    ```
+```bash
+git clone --depth=1 https://github.com/skippyr/july\
+                    ${ZSH_CUSTOM:-${HOME}/.oh-my-zsh/custom}/themes/july
+```
 
-* Change the value of the `ZSH_THEME` variable in your ZSH configuration file,
-  `~/.zshrc`, to use the theme.
+-	Change the value of the `ZSH_THEME` variable in your ZSH configuration file,
+	`~/.zshrc`, to use the theme:
 
-    ```bash
-    ZSH_THEME="july/july"
-    ```
+```bash
+ZSH_THEME=july/july
+```
 
-* Reopen your terminal emulator.
+-	Reopen the terminal emulator to load the theme.
 
-## Issues And Suggestions
+## Support
 
-Report issues and suggestions through the [issues tab](https://github.com/skippyr/july/issues).
+Report issues, questions and suggestion through the [issues tab](https://github.com/skippyr/july/issues).
 
-## License
+## Copyright
 
-This project is released under the terms of the MIT license. A copy of the
-license is bundled with the source code.
+This software is distributed under the MIT License. A copy of the license is
+bundled with the source code.
 
 Copyright (c) 2023, Sherman Rofeman. MIT license.
+
