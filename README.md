@@ -3,6 +3,10 @@
 A simple theme for the ZSH shell.
 ![](preview.png)
 
+It can show you:
+-	Your user and host names.
+-	Your current directory.
+
 ## Installation
 -	Clone this repository.
 ```bash
