@@ -15,8 +15,8 @@ The following dependencies must be installed to install this software properly:
 ### Procedures
 -   Clone this repository.
 ```bash
-git\
-    clone --depth=1 https://github.com/skippyr/july\
+git                                                                            \
+    clone --depth=1 https://github.com/skippyr/july                            \
     ~/.local/share/zsh/themes/july
 ```
 
