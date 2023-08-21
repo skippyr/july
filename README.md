@@ -1,23 +1,23 @@
 # July
 ## About
-A simple the for the ZSH shell.
+This repository contains the source code of July, a simple custom theme for the
+ZSH shell.
 
-Here is a preview that you can check out:
+Here is a preview that you can check it out:
 
 ![](preview.webp)
 
-Note: the colors used in this shell theme depends on your terminal emulator's
-      theme. This means that it may look different in your setup compared to the
-      preview.
+Please note that the colors used in the theme may look different in your setup,
+as they depend on your terminal emulator's theme. The theme used in the preview
+is [Flamerial](https://github.com/skippyr/flamerial).
 
 In the prompt, you will find:
-
 - Your host and user names.
 - Your current directory path.
 
 ## Installation
 ### Dependencies
-In order to install and run this software properly, the following dependencies
+In order to install and this software properly, the following dependencies
 must be installed:
 
 - `git`: required to clone this repository.
@@ -27,21 +27,24 @@ Using a command-line utility, follow these steps:
 
 - Clone this repository using `git`.
 
-```bash
-git                                                                            \
-    clone --depth 1 https://github.com/skippyr/july                            \
-    ~/.local/share/zsh/themes/july
-```
+  ```bash
+  git clone --depth 1 https://github.com/skippyr/july                          \
+                      ~/.local/share/zsh/themes/july
+  ```
 
-- Add the following source rule in your `~/.zshrc` file. Ensure to not source
-  any other theme to avoid causing conflicts.
+  The option `depth` with value `1` specifies to `git` that you only want to
+  download the latest commit instead of the whole commit that it would do by
+  default.
 
-```bash
-source ~/.local/share/zsh/themes/july/july.zsh-theme
-```
+- Add the following source rule to your `~/.zshrc` file. Ensure to not be
+  sourcing any other theme to avoid conflicts.
 
-- Open a new shell session. At this point, the theme should be installed and
-  running.
+  ```bash
+  source ~/.local/share/zsh/themes/july/july.zsh-theme
+  ```
+
+- Open a new ZSH session. At this point, the theme should be running and be
+  ready for you to use.
 
 ## Support
 Report issues, questions and suggestions through its [issues page](https://github.com/skippyr/july/issues).
